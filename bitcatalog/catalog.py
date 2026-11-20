@@ -322,6 +322,220 @@ class SelectorDef:
 
 
 @dataclass(frozen=True)
+class FieldRef:
+    """A signal's identity inside one catalog product."""
+
+    bus: str
+    frame_id: int
+    signal: str
+
+    @classmethod
+    def parse(cls, raw: Any, *, field_name: str) -> "FieldRef":
+        if isinstance(raw, str):
+            raise CatalogError(f"{field_name} must be an object with bus/frame_id/signal", code="bad_field")
+        if not isinstance(raw, Mapping):
+            raise CatalogError(f"{field_name} must be an object", code="bad_field")
+        bus = raw.get("bus")
+        if not isinstance(bus, str) or not bus:
+            raise CatalogError(f"{field_name}.bus must be a non-empty string", code="bad_field")
+        frame_id = _expect_int(raw.get("frame_id"), f"{field_name}.frame_id", minimum=0)
+        signal = raw.get("signal")
+        if not isinstance(signal, str) or not signal:
+            raise CatalogError(f"{field_name}.signal must be a non-empty string", code="bad_field")
+        return cls(bus=bus, frame_id=frame_id, signal=signal)
+
+    @classmethod
+    def parse_or_none(cls, raw: Any, *, field_name: str) -> "FieldRef | None":
+        return None if raw is None else cls.parse(raw, field_name=field_name)
+
+    def to_json(self) -> dict[str, Any]:
+        return {"bus": self.bus, "frame_id": self.frame_id, "signal": self.signal}
+
+    @property
+    def message_key(self) -> tuple[str, int]:
+        return (self.bus, self.frame_id)
+
+
+@dataclass(frozen=True)
+class SegmentDef:
+    """One half of a split counter.
+
+    Each segment names the signal holding it, its effective bit width, the
+    signal indicating a committed settlement, the settlement identity signal,
+    and (optionally) the device's unique increasing settlement sequence and the
+    loom-identity signal.  All of these live in the same message as the
+    segment, so a fragment can be attributed from its own frame.
+    """
+
+    field: FieldRef
+    width: int
+    commit: FieldRef
+    settlement: FieldRef
+    sequence: FieldRef | None = None
+    loom: FieldRef | None = None
+
+    @classmethod
+    def parse(cls, raw: Any, *, field_name: str) -> "SegmentDef":
+        if not isinstance(raw, Mapping):
+            raise CatalogError(f"{field_name} must be an object", code="bad_field")
+        field = FieldRef.parse(raw, field_name=field_name)
+        width = _expect_int(raw.get("width"), f"{field_name}.width", minimum=1, maximum=64)
+        commit = FieldRef.parse(raw.get("commit"), field_name=f"{field_name}.commit")
+        settlement = FieldRef.parse(raw.get("settlement"), field_name=f"{field_name}.settlement")
+        sequence = FieldRef.parse_or_none(raw.get("sequence"), field_name=f"{field_name}.sequence")
+        loom = FieldRef.parse_or_none(raw.get("loom"), field_name=f"{field_name}.loom")
+        return cls(
+            field=field,
+            width=width,
+            commit=commit,
+            settlement=settlement,
+            sequence=sequence,
+            loom=loom,
+        )
+
+    def to_json(self) -> dict[str, Any]:
+        out: dict[str, Any] = {
+            **self.field.to_json(),
+            "width": self.width,
+            "commit": self.commit.to_json(),
+            "settlement": self.settlement.to_json(),
+        }
+        if self.sequence is not None:
+            out["sequence"] = self.sequence.to_json()
+        if self.loom is not None:
+            out["loom"] = self.loom.to_json()
+        return out
+
+    @property
+    def identities(self) -> tuple[FieldRef, ...]:
+        refs = [self.commit, self.settlement]
+        if self.sequence is not None:
+            refs.append(self.sequence)
+        if self.loom is not None:
+            refs.append(self.loom)
+        return tuple(refs)
+
+
+@dataclass(frozen=True)
+class CounterDef:
+    """Declaration of a split piece counter.
+
+    A counter's value is ``(high << low.width) | low``.  The two halves live in
+    frames of (possibly) different messages; each segment carries its own
+    settlement identity, commit flag, ordering sequence and loom identity.
+    """
+
+    name: str
+    low: SegmentDef
+    high: SegmentDef
+    loom_constant: str | None = None
+
+    @property
+    def full_scale(self) -> int:
+        return 1 << (self.low.width + self.high.width)
+
+    @property
+    def total_width(self) -> int:
+        return self.low.width + self.high.width
+
+    @property
+    def message_keys(self) -> tuple[tuple[str, int], ...]:
+        keys = {self.low.field.message_key, self.high.field.message_key}
+        for seg in (self.low, self.high):
+            keys.update(ref.message_key for ref in seg.identities)
+        return tuple(sorted(keys))
+
+    @classmethod
+    def parse(cls, raw: Any) -> "CounterDef":
+        if not isinstance(raw, Mapping):
+            raise CatalogError("counter definition must be an object", code="bad_counter")
+        name = raw.get("name")
+        if not isinstance(name, str) or not name:
+            raise CatalogError("counter needs a non-empty name", code="bad_name")
+        low = SegmentDef.parse(raw.get("low"), field_name=f"counter {name!r}.low")
+        high = SegmentDef.parse(raw.get("high"), field_name=f"counter {name!r}.high")
+        loom_constant = raw.get("loom_constant")
+        if loom_constant is not None and not isinstance(loom_constant, str):
+            raise CatalogError(f"counter {name!r}.loom_constant must be a string", code="bad_field")
+        if loom_constant is not None and (low.loom is not None or high.loom is not None):
+            raise CatalogError(
+                f"counter {name!r}: loom_constant and per-segment loom fields are mutually exclusive",
+                code="bad_loom",
+            )
+        if loom_constant is None:
+            # The loom must be readable for both fragments.
+            if low.loom is None or high.loom is None:
+                raise CatalogError(
+                    f"counter {name!r}: needs a loom field on both segments or a loom_constant",
+                    code="bad_loom",
+                )
+        return cls(name=name, low=low, high=high, loom_constant=loom_constant)
+
+    def to_json(self) -> dict[str, Any]:
+        out: dict[str, Any] = {
+            "name": self.name,
+            "low": self.low.to_json(),
+            "high": self.high.to_json(),
+        }
+        if self.loom_constant is not None:
+            out["loom_constant"] = self.loom_constant
+        return out
+
+
+def _resolve_field(messages: Mapping[tuple[str, int], CompiledMessage], ref: FieldRef, *, owner: str) -> "CompiledSignal":
+    msg = messages.get(ref.message_key)
+    if msg is None:
+        raise CompileError(
+            f"{owner}: no message {ref.bus!r}/{ref.frame_id} for field {ref.signal!r}",
+            code="counter_unknown_field",
+            field=ref.to_json(),
+        )
+    for sig in msg.signals:
+        if sig.name == ref.signal:
+            return sig
+    raise CompileError(
+        f"{owner}: message {ref.bus!r}/{ref.frame_id} has no signal {ref.signal!r}",
+        code="counter_unknown_field",
+        field=ref.to_json(),
+    )
+
+
+def _validate_counter(counter: CounterDef, messages: Mapping[tuple[str, int], CompiledMessage]) -> None:
+    if counter.low.field == counter.high.field:
+        raise CompileError(
+            f"counter {counter.name!r}: low and high must be different fields", code="bad_counter"
+        )
+    if counter.low.field.message_key == counter.high.field.message_key:
+        raise CompileError(
+            f"counter {counter.name!r}: low and high must live in different messages so that a "
+            "half can arrive on its own (到件顺序可颠倒)",
+            code="counter_same_message",
+        )
+    if counter.total_width > 64:
+        raise CompileError(
+            f"counter {counter.name!r}: low+high width exceeds 64 bits", code="bad_counter"
+        )
+    for label, seg in (("low", counter.low), ("high", counter.high)):
+        owner = f"counter {counter.name!r}.{label}"
+        sig = _resolve_field(messages, seg.field, owner=owner)
+        if seg.width > sig.width:
+            raise CompileError(
+                f"{owner}: effective width {seg.width} exceeds signal {seg.field.signal!r} width {sig.width}",
+                code="counter_width",
+            )
+        # Every identity field must be readable from the segment's own frame,
+        # otherwise a fragment cannot be attributed or committed.
+        for ref in seg.identities:
+            if ref.message_key != seg.field.message_key:
+                raise CompileError(
+                    f"{owner}: identity field {ref.signal!r} must live in the segment frame "
+                    f"{seg.field.message_key}, not {ref.message_key}",
+                    code="counter_identity_frame",
+                )
+            _resolve_field(messages, ref, owner=owner)
+
+
+@dataclass(frozen=True)
 class MessageDef:
     bus: str
     frame_id: int
@@ -776,6 +990,43 @@ class CompiledMessage:
 
 
 @dataclass(frozen=True)
+class CompiledSegment:
+    """A counter half bound to its compiled signal and message."""
+
+    field: FieldRef
+    width: int
+    signal: CompiledSignal
+    message: CompiledMessage
+    commit: CompiledSignal
+    settlement: CompiledSignal
+    sequence: CompiledSignal | None
+    loom: CompiledSignal | None
+
+
+@dataclass(frozen=True)
+class CompiledCounter:
+    """A validated counter declaration plus the compiled fields it names."""
+
+    name: str
+    low: CompiledSegment
+    high: CompiledSegment
+    loom_constant: str | None
+
+    @property
+    def total_width(self) -> int:
+        return self.low.width + self.high.width
+
+    @property
+    def full_scale(self) -> int:
+        return 1 << self.total_width
+
+    @property
+    def message_keys(self) -> tuple[tuple[str, int], ...]:
+        keys = {self.low.field.message_key, self.high.field.message_key}
+        return tuple(sorted(keys))
+
+
+@dataclass(frozen=True)
 class DecodedSignal:
     name: str
     raw: int
@@ -824,6 +1075,7 @@ class CatalogProduct:
     fingerprint: str
     messages: tuple[CompiledMessage, ...]
     content: dict[str, Any]
+    counters: tuple[CompiledCounter, ...] = ()
     _by_key: dict[tuple[str, int], CompiledMessage] = field(init=False, repr=False)
     _by_frame_id: dict[int, list[CompiledMessage]] = field(init=False, repr=False)
 
@@ -854,6 +1106,15 @@ class CatalogProduct:
                 buses=[m.bus for m in matches],
             )
         return matches[0]
+
+    def counter(self, name: str) -> CompiledCounter:
+        for counter in self.counters:
+            if counter.name == name:
+                return counter
+        raise DecodeError(f"unknown counter {name!r}", code="unknown_counter")
+
+    def counters_of(self) -> tuple[CompiledCounter, ...]:
+        return self.counters
 
     def codec(self) -> "FrameCodec":
         return FrameCodec(self)
@@ -945,9 +1206,14 @@ class FrameCodec:
 # ---------------------------------------------------------------------------
 
 
-def _canonical_content(messages: Iterable[MessageDef]) -> dict[str, Any]:
+def _canonical_content(messages: Iterable[MessageDef], counters: Iterable[CounterDef] = ()) -> dict[str, Any]:
     ordered = sorted(messages, key=lambda m: (m.bus, m.frame_id))
-    return {"protocol": PROTOCOL, "messages": [m.to_json() for m in ordered]}
+    ordered_counters = sorted(counters, key=lambda c: c.name)
+    return {
+        "protocol": PROTOCOL,
+        "messages": [m.to_json() for m in ordered],
+        "counters": [c.to_json() for c in ordered_counters],
+    }
 
 
 def _content_sha(content: dict[str, Any]) -> str:
@@ -1027,16 +1293,77 @@ def _compile_content(content: Mapping[str, Any]) -> tuple[CompiledMessage, ...]:
     return tuple(compiled)
 
 
-def build_product(messages: Iterable[Mapping[str, Any] | MessageDef]) -> CatalogProduct:
+def _compile_counters(content: Mapping[str, Any], messages: tuple[CompiledMessage, ...]) -> tuple[CompiledCounter, ...]:
+    raw_counters = content.get("counters") or []
+    if not isinstance(raw_counters, list):
+        raise CompileError("catalog 'counters' must be a list", code="bad_counter")
+    compiled_by_key = {m.key: m for m in messages}
+    seen: set[str] = set()
+    out: list[CompiledCounter] = []
+    for raw in raw_counters:
+        counter = CounterDef.parse(raw)
+        if counter.name in seen:
+            raise CompileError(f"duplicate counter name {counter.name!r}", code="duplicate_counter")
+        seen.add(counter.name)
+        _validate_counter(counter, compiled_by_key)
+
+        def field_sig(ref: FieldRef, label: str) -> CompiledSignal:
+            msg = compiled_by_key[ref.message_key]
+            sig = next(s for s in msg.signals if s.name == ref.signal)
+            if not sig.always:
+                raise CompileError(
+                    f"counter {counter.name!r}: {label} field {ref.signal!r} is branch-only; "
+                    "counter fields must be unconditionally active",
+                    code="counter_branch",
+                )
+            return sig
+
+        def seg(segdef: SegmentDef, label: str) -> CompiledSegment:
+            msg = compiled_by_key[segdef.field.message_key]
+            return CompiledSegment(
+                field=segdef.field,
+                width=segdef.width,
+                signal=field_sig(segdef.field, label),
+                message=msg,
+                commit=field_sig(segdef.commit, f"{label}.commit"),
+                settlement=field_sig(segdef.settlement, f"{label}.settlement"),
+                sequence=field_sig(segdef.sequence, f"{label}.sequence") if segdef.sequence else None,
+                loom=field_sig(segdef.loom, f"{label}.loom") if segdef.loom else None,
+            )
+
+        out.append(
+            CompiledCounter(
+                name=counter.name,
+                low=seg(counter.low, "low"),
+                high=seg(counter.high, "high"),
+                loom_constant=counter.loom_constant,
+            )
+        )
+    return tuple(out)
+
+
+def build_product(
+    messages: Iterable[Mapping[str, Any] | MessageDef],
+    counters: Iterable[Mapping[str, Any] | CounterDef] = (),
+) -> CatalogProduct:
     """Validate definitions and return an immutable, content-addressed product."""
 
     defs: list[MessageDef] = []
     for raw in messages:
         defs.append(raw if isinstance(raw, MessageDef) else MessageDef.parse(raw))
-    content = _canonical_content(defs)
+    counter_defs: list[CounterDef] = []
+    for raw in counters:
+        counter_defs.append(raw if isinstance(raw, CounterDef) else CounterDef.parse(raw))
+    content = _canonical_content(defs, counter_defs)
     fingerprint = _content_sha(content)
     compiled = _compile_content(content)
-    return CatalogProduct(fingerprint=fingerprint, messages=compiled, content=content)
+    compiled_counters = _compile_counters(content, compiled)
+    return CatalogProduct(
+        fingerprint=fingerprint,
+        messages=compiled,
+        content=content,
+        counters=compiled_counters,
+    )
 
 
 def load_product(path: str | os.PathLike[str]) -> CatalogProduct:
@@ -1060,7 +1387,8 @@ def load_product(path: str | os.PathLike[str]) -> CatalogProduct:
             code="bad_product_hash",
         )
     compiled = _compile_content(content)
-    return CatalogProduct(fingerprint=fingerprint, messages=compiled, content=content)
+    counters = _compile_counters(content, compiled)
+    return CatalogProduct(fingerprint=fingerprint, messages=compiled, content=content, counters=counters)
 
 
 def product_from_definitions(raw: Mapping[str, Any] | Sequence[Mapping[str, Any]]) -> CatalogProduct:
@@ -1070,6 +1398,8 @@ def product_from_definitions(raw: Mapping[str, Any] | Sequence[Mapping[str, Any]
         messages = raw.get("messages")
         if messages is None:
             raise CatalogError("catalog document needs 'messages'", code="bad_catalog")
+        counters = raw.get("counters") or ()
     else:
         messages = raw
-    return build_product(messages)
+        counters = ()
+    return build_product(messages, counters)

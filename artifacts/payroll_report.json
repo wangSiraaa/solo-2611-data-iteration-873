@@ -1,0 +1,4824 @@
+{
+  "archived_late_proof": {
+    "affected_containers_initial_spec": [],
+    "affected_containers_with_citing_spec": [
+      "loom7-day2"
+    ],
+    "late_frame": "s204-high",
+    "recomputed": {
+      "containers": [
+        "loom7-day2"
+      ],
+      "entries": [
+        {
+          "container": "loom7-day2",
+          "group_id": "night",
+          "new_fen": 5,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-shift-2",
+          "status": "settled"
+        }
+      ],
+      "groups_to_recompute": [
+        {
+          "container": "loom7-day2",
+          "group_id": "night",
+          "shift_id": "night-shift-2"
+        }
+      ],
+      "history": [
+        {
+          "container": "loom7-day2",
+          "counter": "pieces",
+          "day_delta": 7,
+          "end_pin": "343fa2818f6e0b4989d5d488180b7c20e379fbfe8899e9009c0fbac2ed93de34",
+          "epoch": 0,
+          "loom": "loom-7",
+          "provenance": "archived",
+          "reasons": [],
+          "referenced_pins": [
+            "2ad8bfc13d13a87cb6876e9681b38fd859a4e8f9f78015fb019fd39490c0f04b",
+            "343fa2818f6e0b4989d5d488180b7c20e379fbfe8899e9009c0fbac2ed93de34",
+            "27500daab59a556a6887cc806aebf636747db1bfcb6ec84313de34bca3753c2b"
+          ],
+          "shifts": [
+            {
+              "container": "loom7-day2",
+              "day_delta": 5,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 3,
+                    "employee_id": "A",
+                    "extra": 1,
+                    "points": 2,
+                    "remainder": "1/2",
+                    "whole": 2
+                  },
+                  {
+                    "amount": 2,
+                    "employee_id": "B",
+                    "extra": 0,
+                    "points": 2,
+                    "remainder": "1/2",
+                    "whole": 2
+                  }
+                ],
+                "end_pin": "343fa2818f6e0b4989d5d488180b7c20e379fbfe8899e9009c0fbac2ed93de34",
+                "end_settlement": "204",
+                "fen": 5,
+                "group_id": "night",
+                "pieces": 5,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-shift-2",
+                "slip_id": "night-shift-2:night",
+                "start_pin": "27500daab59a556a6887cc806aebf636747db1bfcb6ec84313de34bca3753c2b",
+                "start_settlement": "203",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 5,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "343fa2818f6e0b4989d5d488180b7c20e379fbfe8899e9009c0fbac2ed93de34",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2950503652,
+                  "sequence": 302,
+                  "settlement": "204",
+                  "status": "confirmed",
+                  "value": 517,
+                  "value_hex": "0x0205"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "27500daab59a556a6887cc806aebf636747db1bfcb6ec84313de34bca3753c2b",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 3239294527,
+                  "sequence": 301,
+                  "settlement": "203",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "27500daab59a556a6887cc806aebf636747db1bfcb6ec84313de34bca3753c2b",
+                "343fa2818f6e0b4989d5d488180b7c20e379fbfe8899e9009c0fbac2ed93de34"
+              ],
+              "settlement": "204",
+              "shift_id": "night-shift-2"
+            }
+          ],
+          "split_required": false,
+          "start_pin": "2ad8bfc13d13a87cb6876e9681b38fd859a4e8f9f78015fb019fd39490c0f04b"
+        }
+      ]
+    },
+    "settlement": 204
+  },
+  "changed_pins": [
+    "0d164dc495ab9ac25d034f7fb5f3f9aeaa94469cc76833eda343d54ac3bf2d2f",
+    "343fa2818f6e0b4989d5d488180b7c20e379fbfe8899e9009c0fbac2ed93de34"
+  ],
+  "citation_index": {
+    "0d164dc495ab9ac25d034f7fb5f3f9aeaa94469cc76833eda343d54ac3bf2d2f": [
+      [
+        "loom7-day2",
+        "night",
+        "night-shift-2"
+      ]
+    ],
+    "343fa2818f6e0b4989d5d488180b7c20e379fbfe8899e9009c0fbac2ed93de34": [
+      [
+        "loom7-day2",
+        "night",
+        "night-shift-2"
+      ]
+    ]
+  },
+  "counter": "pieces",
+  "first_run": {
+    "day_fen": 1,
+    "day_pieces": 1,
+    "night_allocations": [
+      {
+        "amount": 1,
+        "employee_id": "A",
+        "extra": 1,
+        "points": 2,
+        "remainder": "1/2",
+        "whole": 0
+      },
+      {
+        "amount": 0,
+        "employee_id": "B",
+        "extra": 0,
+        "points": 2,
+        "remainder": "1/2",
+        "whole": 0
+      }
+    ],
+    "night_fen": 1,
+    "night_pieces": 1
+  },
+  "half_readings": {
+    "count": 12,
+    "incomplete": [
+      {
+        "missing": "high",
+        "settlement": "100",
+        "status": "incomplete"
+      },
+      {
+        "missing": "high",
+        "settlement": "101",
+        "status": "incomplete"
+      },
+      {
+        "missing": "high",
+        "settlement": "102",
+        "status": "incomplete"
+      },
+      {
+        "missing": "high",
+        "settlement": "103",
+        "status": "incomplete"
+      },
+      {
+        "missing": "high",
+        "settlement": "104",
+        "status": "incomplete"
+      },
+      {
+        "missing": "high",
+        "settlement": "105",
+        "status": "incomplete"
+      },
+      {
+        "missing": "high",
+        "settlement": "106",
+        "status": "incomplete"
+      },
+      {
+        "missing": "high",
+        "settlement": "107",
+        "status": "incomplete"
+      },
+      {
+        "missing": "high",
+        "settlement": "108",
+        "status": "incomplete"
+      },
+      {
+        "missing": "high",
+        "settlement": "109",
+        "status": "incomplete"
+      },
+      {
+        "missing": "high",
+        "settlement": "110",
+        "status": "incomplete"
+      },
+      {
+        "missing": "high",
+        "settlement": "111",
+        "status": "incomplete"
+      }
+    ],
+    "settlements": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111
+    ]
+  },
+  "many_slips_few_boundaries": {
+    "citing_202": [
+      [
+        "loom7-day1",
+        "day",
+        "day-shift"
+      ],
+      [
+        "loom7-day1",
+        "night",
+        "night-shift"
+      ]
+    ],
+    "note": "each night payslip cites the same 202/203 boundary readings"
+  },
+  "mass_scenario": {
+    "affected_containers": [
+      "loom7-night-mass"
+    ],
+    "citers_of_handover_pin": 50,
+    "first_run": {
+      "crossed_view": {
+        "borrowed_from": "6",
+        "borrowed_segment": "high",
+        "counter": "pieces",
+        "crossed": true,
+        "epoch": 0,
+        "frames": [
+          "m5-low"
+        ],
+        "high": null,
+        "loom": "loom-7",
+        "low": 255,
+        "missing_segment": "high",
+        "revision": 2313515216,
+        "sequence": 5,
+        "settlement": "5",
+        "status": "incomplete",
+        "value": null,
+        "value_hex": null
+      },
+      "handover_missing": "high",
+      "handover_status": "incomplete",
+      "held_slips": 50,
+      "naive_borrowed_value": "0x02FF",
+      "settled_slips": 0
+    },
+    "groups": 50,
+    "late_frame": "m5-high",
+    "real_handover_value": "0x01FF",
+    "recalc": {
+      "containers": [
+        "loom7-night-mass"
+      ],
+      "entries": [
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew00",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-00",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew01",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-01",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew02",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-02",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew03",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-03",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew04",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-04",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew05",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-05",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew06",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-06",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew07",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-07",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew08",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-08",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew09",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-09",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew10",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-10",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew11",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-11",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew12",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-12",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew13",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-13",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew14",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-14",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew15",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-15",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew16",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-16",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew17",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-17",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew18",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-18",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew19",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-19",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew20",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-20",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew21",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-21",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew22",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-22",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew23",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-23",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew24",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-24",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew25",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-25",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew26",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-26",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew27",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-27",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew28",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-28",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew29",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-29",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew30",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-30",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew31",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-31",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew32",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-32",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew33",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-33",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew34",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-34",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew35",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-35",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew36",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-36",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew37",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-37",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew38",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-38",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew39",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-39",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew40",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-40",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew41",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-41",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew42",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-42",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew43",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-43",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew44",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-44",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew45",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-45",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew46",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-46",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew47",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-47",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew48",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-48",
+          "status": "settled"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew49",
+          "new_fen": 1,
+          "old_fen": null,
+          "provenance": "archived",
+          "reason": "recomputed",
+          "shift_id": "night-49",
+          "status": "settled"
+        }
+      ],
+      "groups_to_recompute": [
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew00",
+          "shift_id": "night-00"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew01",
+          "shift_id": "night-01"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew02",
+          "shift_id": "night-02"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew03",
+          "shift_id": "night-03"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew04",
+          "shift_id": "night-04"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew05",
+          "shift_id": "night-05"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew06",
+          "shift_id": "night-06"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew07",
+          "shift_id": "night-07"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew08",
+          "shift_id": "night-08"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew09",
+          "shift_id": "night-09"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew10",
+          "shift_id": "night-10"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew11",
+          "shift_id": "night-11"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew12",
+          "shift_id": "night-12"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew13",
+          "shift_id": "night-13"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew14",
+          "shift_id": "night-14"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew15",
+          "shift_id": "night-15"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew16",
+          "shift_id": "night-16"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew17",
+          "shift_id": "night-17"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew18",
+          "shift_id": "night-18"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew19",
+          "shift_id": "night-19"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew20",
+          "shift_id": "night-20"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew21",
+          "shift_id": "night-21"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew22",
+          "shift_id": "night-22"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew23",
+          "shift_id": "night-23"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew24",
+          "shift_id": "night-24"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew25",
+          "shift_id": "night-25"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew26",
+          "shift_id": "night-26"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew27",
+          "shift_id": "night-27"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew28",
+          "shift_id": "night-28"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew29",
+          "shift_id": "night-29"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew30",
+          "shift_id": "night-30"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew31",
+          "shift_id": "night-31"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew32",
+          "shift_id": "night-32"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew33",
+          "shift_id": "night-33"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew34",
+          "shift_id": "night-34"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew35",
+          "shift_id": "night-35"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew36",
+          "shift_id": "night-36"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew37",
+          "shift_id": "night-37"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew38",
+          "shift_id": "night-38"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew39",
+          "shift_id": "night-39"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew40",
+          "shift_id": "night-40"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew41",
+          "shift_id": "night-41"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew42",
+          "shift_id": "night-42"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew43",
+          "shift_id": "night-43"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew44",
+          "shift_id": "night-44"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew45",
+          "shift_id": "night-45"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew46",
+          "shift_id": "night-46"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew47",
+          "shift_id": "night-47"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew48",
+          "shift_id": "night-48"
+        },
+        {
+          "container": "loom7-night-mass",
+          "group_id": "crew49",
+          "shift_id": "night-49"
+        }
+      ],
+      "history": [
+        {
+          "container": "loom7-night-mass",
+          "counter": "pieces",
+          "day_delta": 1,
+          "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+          "epoch": 0,
+          "loom": "loom-7",
+          "provenance": "archived",
+          "reasons": [],
+          "referenced_pins": [
+            "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+            "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+          ],
+          "shifts": [
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W00",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew00",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-00",
+                "slip_id": "night-00:crew00",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-00"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W01",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew01",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-01",
+                "slip_id": "night-01:crew01",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-01"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W02",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew02",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-02",
+                "slip_id": "night-02:crew02",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-02"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W03",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew03",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-03",
+                "slip_id": "night-03:crew03",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-03"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W04",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew04",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-04",
+                "slip_id": "night-04:crew04",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-04"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W05",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew05",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-05",
+                "slip_id": "night-05:crew05",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-05"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W06",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew06",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-06",
+                "slip_id": "night-06:crew06",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-06"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W07",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew07",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-07",
+                "slip_id": "night-07:crew07",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-07"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W08",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew08",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-08",
+                "slip_id": "night-08:crew08",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-08"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W09",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew09",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-09",
+                "slip_id": "night-09:crew09",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-09"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W10",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew10",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-10",
+                "slip_id": "night-10:crew10",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-10"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W11",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew11",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-11",
+                "slip_id": "night-11:crew11",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-11"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W12",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew12",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-12",
+                "slip_id": "night-12:crew12",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-12"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W13",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew13",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-13",
+                "slip_id": "night-13:crew13",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-13"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W14",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew14",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-14",
+                "slip_id": "night-14:crew14",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-14"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W15",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew15",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-15",
+                "slip_id": "night-15:crew15",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-15"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W16",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew16",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-16",
+                "slip_id": "night-16:crew16",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-16"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W17",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew17",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-17",
+                "slip_id": "night-17:crew17",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-17"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W18",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew18",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-18",
+                "slip_id": "night-18:crew18",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-18"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W19",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew19",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-19",
+                "slip_id": "night-19:crew19",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-19"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W20",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew20",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-20",
+                "slip_id": "night-20:crew20",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-20"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W21",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew21",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-21",
+                "slip_id": "night-21:crew21",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-21"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W22",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew22",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-22",
+                "slip_id": "night-22:crew22",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-22"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W23",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew23",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-23",
+                "slip_id": "night-23:crew23",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-23"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W24",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew24",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-24",
+                "slip_id": "night-24:crew24",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-24"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W25",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew25",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-25",
+                "slip_id": "night-25:crew25",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-25"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W26",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew26",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-26",
+                "slip_id": "night-26:crew26",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-26"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W27",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew27",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-27",
+                "slip_id": "night-27:crew27",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-27"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W28",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew28",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-28",
+                "slip_id": "night-28:crew28",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-28"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W29",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew29",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-29",
+                "slip_id": "night-29:crew29",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-29"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W30",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew30",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-30",
+                "slip_id": "night-30:crew30",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-30"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W31",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew31",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-31",
+                "slip_id": "night-31:crew31",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-31"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W32",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew32",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-32",
+                "slip_id": "night-32:crew32",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-32"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W33",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew33",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-33",
+                "slip_id": "night-33:crew33",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-33"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W34",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew34",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-34",
+                "slip_id": "night-34:crew34",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-34"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W35",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew35",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-35",
+                "slip_id": "night-35:crew35",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-35"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W36",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew36",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-36",
+                "slip_id": "night-36:crew36",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-36"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W37",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew37",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-37",
+                "slip_id": "night-37:crew37",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-37"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W38",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew38",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-38",
+                "slip_id": "night-38:crew38",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-38"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W39",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew39",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-39",
+                "slip_id": "night-39:crew39",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-39"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W40",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew40",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-40",
+                "slip_id": "night-40:crew40",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-40"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W41",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew41",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-41",
+                "slip_id": "night-41:crew41",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-41"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W42",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew42",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-42",
+                "slip_id": "night-42:crew42",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-42"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W43",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew43",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-43",
+                "slip_id": "night-43:crew43",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-43"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W44",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew44",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-44",
+                "slip_id": "night-44:crew44",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-44"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W45",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew45",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-45",
+                "slip_id": "night-45:crew45",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-45"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W46",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew46",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-46",
+                "slip_id": "night-46:crew46",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-46"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W47",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew47",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-47",
+                "slip_id": "night-47:crew47",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-47"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W48",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew48",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-48",
+                "slip_id": "night-48:crew48",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-48"
+            },
+            {
+              "container": "loom7-night-mass",
+              "day_delta": 1,
+              "loom": "loom-7",
+              "payslip": {
+                "allocations": [
+                  {
+                    "amount": 1,
+                    "employee_id": "W49",
+                    "extra": 0,
+                    "points": 1,
+                    "remainder": "0",
+                    "whole": 1
+                  }
+                ],
+                "end_pin": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                "end_settlement": "6",
+                "fen": 1,
+                "group_id": "crew49",
+                "pieces": 1,
+                "previous_fen": null,
+                "reason": "archived",
+                "reasons": [],
+                "shift_id": "night-49",
+                "slip_id": "night-49:crew49",
+                "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "start_settlement": "5",
+                "status": "settled",
+                "supersedes": null
+              },
+              "picture": {
+                "day_delta": 1,
+                "end": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2154746085,
+                  "sequence": 6,
+                  "settlement": "6",
+                  "status": "confirmed",
+                  "value": 512,
+                  "value_hex": "0x0200"
+                },
+                "note": null,
+                "other_group_boundary": null,
+                "start": {
+                  "complete": true,
+                  "counter": "pieces",
+                  "epoch": 0,
+                  "loom": "loom-7",
+                  "missing_segment": null,
+                  "pin_id": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                  "product_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+                  "revision": 2889771680,
+                  "sequence": 5,
+                  "settlement": "5",
+                  "status": "confirmed",
+                  "value": 511,
+                  "value_hex": "0x01FF"
+                }
+              },
+              "provenance": "archived",
+              "reasons": [],
+              "referenced_pins": [
+                "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891",
+                "30dd4b62f8f0d14cc24771fe0a6cb4bb13fd7ece6ada8e270cd23d39f7044457"
+              ],
+              "settlement": "6",
+              "shift_id": "night-49"
+            }
+          ],
+          "split_required": false,
+          "start_pin": "079a066a43a0f0f16749da8976443c1ee26008402dd3242f973f8f21a04c6891"
+        }
+      ]
+    }
+  },
+  "missed_fragments": [],
+  "out_of_order": [
+    {
+      "frames": [
+        "s200-low",
+        "s200-high"
+      ],
+      "settlement": "200",
+      "status": "confirmed",
+      "value": 510
+    },
+    {
+      "frames": [
+        "s201-low",
+        "s201-high"
+      ],
+      "settlement": "201",
+      "status": "confirmed",
+      "value": 511
+    }
+  ],
+  "same_instant": {
+    "ns": 1800000000050000000,
+    "order": [
+      "202",
+      "203"
+    ],
+    "sequences": {
+      "202": 300,
+      "203": 301
+    }
+  },
+  "split_required_epochs": []
+}

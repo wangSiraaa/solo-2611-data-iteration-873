@@ -1,0 +1,350 @@
+{
+ "compiled": [
+  {
+   "always": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "branch_values": [],
+   "bus": "loom",
+   "frame_id": 20,
+   "payload_bytes": 8,
+   "signals": [
+    {
+     "mask": "0xffff",
+     "name": "settlement",
+     "order": "little",
+     "phys_range": [
+      "0",
+      "65535"
+     ],
+     "raw_range": [
+      0,
+      65535
+     ],
+     "start": 0,
+     "width": 16
+    },
+    {
+     "mask": "0xffff",
+     "name": "sequence",
+     "order": "little",
+     "phys_range": [
+      "0",
+      "65535"
+     ],
+     "raw_range": [
+      0,
+      65535
+     ],
+     "start": 16,
+     "width": 16
+    },
+    {
+     "mask": "0xff",
+     "name": "loom_id",
+     "order": "little",
+     "phys_range": [
+      "0",
+      "255"
+     ],
+     "raw_range": [
+      0,
+      255
+     ],
+     "start": 32,
+     "width": 8
+    },
+    {
+     "mask": "0x1",
+     "name": "commit",
+     "order": "little",
+     "phys_range": [
+      "0",
+      "1"
+     ],
+     "raw_range": [
+      0,
+      1
+     ],
+     "start": 40,
+     "width": 1
+    },
+    {
+     "mask": "0xff",
+     "name": "count_low",
+     "order": "little",
+     "phys_range": [
+      "0",
+      "255"
+     ],
+     "raw_range": [
+      0,
+      255
+     ],
+     "start": 48,
+     "width": 8
+    }
+   ],
+   "unassigned_mask": "0xff00fe0000000000"
+  },
+  {
+   "always": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "branch_values": [],
+   "bus": "loom",
+   "frame_id": 21,
+   "payload_bytes": 8,
+   "signals": [
+    {
+     "mask": "0xffff",
+     "name": "settlement",
+     "order": "little",
+     "phys_range": [
+      "0",
+      "65535"
+     ],
+     "raw_range": [
+      0,
+      65535
+     ],
+     "start": 0,
+     "width": 16
+    },
+    {
+     "mask": "0xffff",
+     "name": "sequence",
+     "order": "little",
+     "phys_range": [
+      "0",
+      "65535"
+     ],
+     "raw_range": [
+      0,
+      65535
+     ],
+     "start": 16,
+     "width": 16
+    },
+    {
+     "mask": "0xff",
+     "name": "loom_id",
+     "order": "little",
+     "phys_range": [
+      "0",
+      "255"
+     ],
+     "raw_range": [
+      0,
+      255
+     ],
+     "start": 32,
+     "width": 8
+    },
+    {
+     "mask": "0x1",
+     "name": "commit",
+     "order": "little",
+     "phys_range": [
+      "0",
+      "1"
+     ],
+     "raw_range": [
+      0,
+      1
+     ],
+     "start": 40,
+     "width": 1
+    },
+    {
+     "mask": "0xff",
+     "name": "count_high",
+     "order": "little",
+     "phys_range": [
+      "0",
+      "255"
+     ],
+     "raw_range": [
+      0,
+      255
+     ],
+     "start": 48,
+     "width": 8
+    }
+   ],
+   "unassigned_mask": "0xff00fe0000000000"
+  }
+ ],
+ "content": {
+  "counters": [
+   {
+    "high": {
+     "bus": "loom",
+     "commit": {
+      "bus": "loom",
+      "frame_id": 21,
+      "signal": "commit"
+     },
+     "frame_id": 21,
+     "sequence": {
+      "bus": "loom",
+      "frame_id": 21,
+      "signal": "sequence"
+     },
+     "settlement": {
+      "bus": "loom",
+      "frame_id": 21,
+      "signal": "settlement"
+     },
+     "signal": "count_high",
+     "width": 8
+    },
+    "loom_constant": "loom-7",
+    "low": {
+     "bus": "loom",
+     "commit": {
+      "bus": "loom",
+      "frame_id": 20,
+      "signal": "commit"
+     },
+     "frame_id": 20,
+     "sequence": {
+      "bus": "loom",
+      "frame_id": 20,
+      "signal": "sequence"
+     },
+     "settlement": {
+      "bus": "loom",
+      "frame_id": 20,
+      "signal": "settlement"
+     },
+     "signal": "count_low",
+     "width": 8
+    },
+    "name": "pieces"
+   }
+  ],
+  "messages": [
+   {
+    "bus": "loom",
+    "frame_id": 20,
+    "payload_bytes": 8,
+    "selector": null,
+    "signals": [
+     {
+      "factor": "1",
+      "name": "settlement",
+      "offset": "0",
+      "order": "little",
+      "signed": false,
+      "start": 0,
+      "width": 16
+     },
+     {
+      "factor": "1",
+      "name": "sequence",
+      "offset": "0",
+      "order": "little",
+      "signed": false,
+      "start": 16,
+      "width": 16
+     },
+     {
+      "factor": "1",
+      "name": "loom_id",
+      "offset": "0",
+      "order": "little",
+      "signed": false,
+      "start": 32,
+      "width": 8
+     },
+     {
+      "factor": "1",
+      "name": "commit",
+      "offset": "0",
+      "order": "little",
+      "signed": false,
+      "start": 40,
+      "width": 1
+     },
+     {
+      "factor": "1",
+      "name": "count_low",
+      "offset": "0",
+      "order": "little",
+      "signed": false,
+      "start": 48,
+      "width": 8
+     }
+    ]
+   },
+   {
+    "bus": "loom",
+    "frame_id": 21,
+    "payload_bytes": 8,
+    "selector": null,
+    "signals": [
+     {
+      "factor": "1",
+      "name": "settlement",
+      "offset": "0",
+      "order": "little",
+      "signed": false,
+      "start": 0,
+      "width": 16
+     },
+     {
+      "factor": "1",
+      "name": "sequence",
+      "offset": "0",
+      "order": "little",
+      "signed": false,
+      "start": 16,
+      "width": 16
+     },
+     {
+      "factor": "1",
+      "name": "loom_id",
+      "offset": "0",
+      "order": "little",
+      "signed": false,
+      "start": 32,
+      "width": 8
+     },
+     {
+      "factor": "1",
+      "name": "commit",
+      "offset": "0",
+      "order": "little",
+      "signed": false,
+      "start": 40,
+      "width": 1
+     },
+     {
+      "factor": "1",
+      "name": "count_high",
+      "offset": "0",
+      "order": "little",
+      "signed": false,
+      "start": 48,
+      "width": 8
+     }
+    ]
+   }
+  ],
+  "protocol": "bitcatalog-proto/1"
+ },
+ "content_sha256": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+ "fingerprint": "c070b8f3ae1aa0c3b38fb913779f76837f8c61cbacd400c2163c8e65f91074b8",
+ "format": "bitcatalog-product/1",
+ "message_count": 2,
+ "protocol": "bitcatalog-proto/1"
+}

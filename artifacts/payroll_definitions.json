@@ -1,0 +1,156 @@
+{
+ "counters": [
+  {
+   "high": {
+    "bus": "loom",
+    "commit": {
+     "bus": "loom",
+     "frame_id": 21,
+     "signal": "commit"
+    },
+    "frame_id": 21,
+    "sequence": {
+     "bus": "loom",
+     "frame_id": 21,
+     "signal": "sequence"
+    },
+    "settlement": {
+     "bus": "loom",
+     "frame_id": 21,
+     "signal": "settlement"
+    },
+    "signal": "count_high",
+    "width": 8
+   },
+   "loom_constant": "loom-7",
+   "low": {
+    "bus": "loom",
+    "commit": {
+     "bus": "loom",
+     "frame_id": 20,
+     "signal": "commit"
+    },
+    "frame_id": 20,
+    "sequence": {
+     "bus": "loom",
+     "frame_id": 20,
+     "signal": "sequence"
+    },
+    "settlement": {
+     "bus": "loom",
+     "frame_id": 20,
+     "signal": "settlement"
+    },
+    "signal": "count_low",
+    "width": 8
+   },
+   "name": "pieces"
+  }
+ ],
+ "messages": [
+  {
+   "bus": "loom",
+   "frame_id": 20,
+   "payload_bytes": 8,
+   "signals": [
+    {
+     "factor": "1",
+     "name": "settlement",
+     "offset": "0",
+     "order": "little",
+     "signed": false,
+     "start": 0,
+     "width": 16
+    },
+    {
+     "factor": "1",
+     "name": "sequence",
+     "offset": "0",
+     "order": "little",
+     "signed": false,
+     "start": 16,
+     "width": 16
+    },
+    {
+     "factor": "1",
+     "name": "loom_id",
+     "offset": "0",
+     "order": "little",
+     "signed": false,
+     "start": 32,
+     "width": 8
+    },
+    {
+     "factor": "1",
+     "name": "commit",
+     "offset": "0",
+     "order": "little",
+     "signed": false,
+     "start": 40,
+     "width": 1
+    },
+    {
+     "factor": "1",
+     "name": "count_low",
+     "offset": "0",
+     "order": "little",
+     "signed": false,
+     "start": 48,
+     "width": 8
+    }
+   ]
+  },
+  {
+   "bus": "loom",
+   "frame_id": 21,
+   "payload_bytes": 8,
+   "signals": [
+    {
+     "factor": "1",
+     "name": "settlement",
+     "offset": "0",
+     "order": "little",
+     "signed": false,
+     "start": 0,
+     "width": 16
+    },
+    {
+     "factor": "1",
+     "name": "sequence",
+     "offset": "0",
+     "order": "little",
+     "signed": false,
+     "start": 16,
+     "width": 16
+    },
+    {
+     "factor": "1",
+     "name": "loom_id",
+     "offset": "0",
+     "order": "little",
+     "signed": false,
+     "start": 32,
+     "width": 8
+    },
+    {
+     "factor": "1",
+     "name": "commit",
+     "offset": "0",
+     "order": "little",
+     "signed": false,
+     "start": 40,
+     "width": 1
+    },
+    {
+     "factor": "1",
+     "name": "count_high",
+     "offset": "0",
+     "order": "little",
+     "signed": false,
+     "start": 48,
+     "width": 8
+    }
+   ]
+  }
+ ]
+}

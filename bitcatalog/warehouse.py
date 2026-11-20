@@ -949,6 +949,56 @@ class ObservationWarehouse:
         prod = self.product(product) if isinstance(product, str) else product
         return prod.message(bus, frame_id).decode(payload)
 
+    def message_frames(
+        self,
+        product: CatalogProduct | str,
+        bus: str,
+        frame_id: int,
+        *,
+        status: str = STATUS_OK,
+    ) -> list[StoredFrame]:
+        """Every stored frame of one ``(bus, frame_id)``, ordered by time/id.
+
+        Used by the counting layer, which needs whole decoded frames (raw
+        values, selector, event time) rather than a single-signal aggregate.
+        """
+
+        product_id = self._product_id(product)
+        rows = self._conn.execute(
+            "SELECT * FROM frames WHERE product_id = ? AND bus = ? AND frame_id = ?"
+            " AND status = ? ORDER BY occurred_at_ns, frame_event_id",
+            (product_id, bus, frame_id, status),
+        ).fetchall()
+        out: list[StoredFrame] = []
+        for r in rows:
+            obs = self._conn.execute(
+                "SELECT s.name AS name, o.raw, o.value_num, o.value_den FROM observations o"
+                " JOIN signals s ON s.id = o.signal_id"
+                " WHERE o.product_id = ? AND o.frame_pk = ? ORDER BY s.name",
+                (product_id, r["pk"]),
+            ).fetchall()
+            out.append(
+                StoredFrame(
+                    frame_event_id=r["frame_event_id"],
+                    bus=r["bus"],
+                    frame_id=r["frame_id"],
+                    occurred_at_ns=r["occurred_at_ns"],
+                    occurred_at=r["occurred_at"],
+                    payload=r["payload"] if r["payload"] is not None else b"",
+                    payload_hex=r["payload_hex"],
+                    status=r["status"],
+                    selector=r["selector"],
+                    error_code=r["error_code"],
+                    error_position=r["error_position"],
+                    error_message=r["error_message"],
+                    signals={
+                        o["name"]: (o["raw"], Fraction(int(o["value_num"]), int(o["value_den"])))
+                        for o in obs
+                    },
+                )
+            )
+        return out
+
 
 def frame_from_hex(
     product: CatalogProduct,
